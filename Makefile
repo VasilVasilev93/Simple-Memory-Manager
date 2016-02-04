@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -g -c
 
-SOURCES = main.cpp
+SOURCES = main.cpp MemoryManager.cpp
 OBJS = $(SOURCES:.cpp=.o)
-EXECUTABLE = final
+EXECUTABLE = final.exe
 
 $(EXECUTABLE): $(OBJS) 
 	$(CC) $(OBJS) -o $@
